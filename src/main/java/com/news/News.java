@@ -29,20 +29,14 @@ public class News {
 	private String filePath;
 	private String fileType;
 	
-	@OneToMany(mappedBy= "news" , cascade= CascadeType.ALL,orphanRemoval=true)
-	private List<Comment> comments;
+	
 	public String getFilePath() {
 		return filePath;
 	}
 	public void setFilePath(String filePath) {
 		this.filePath = filePath;
 	}
-	public List<Comment> getComments() {
-		return comments;
-	}
-	public void setComments(List<Comment> comments) {
-		this.comments = comments;
-	}
+	
 	public String getFileType() {
 		return fileType;
 	}
